@@ -289,6 +289,26 @@ footer::before {
     border-bottom: 1px dotted #fff;
 }
 
+.main-3quarter {
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.main-3quarter h1 {
+    display: inline-block;
+    color: #00cc99;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.main-3quarter h2 {
+    display: inline-block;
+    color: #9b9b9b;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
 /********************************************************************* 
 homepage css setting  
 */
@@ -463,16 +483,87 @@ course css setting
 }
 
 .teacher {
-    background: rgb(219, 135, 135);
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.teacher-pic {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+}
+
+
+.teacher-name {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+
+.teacher-name p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 12px 0;
+    color: #00cc99;
+}
+
+.teacher-name p:last-child {
+    color: #323228;
+}
+
+.teacher-exp {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.teacher-exp>li {
+    line-height: 1.75em;
+    color: #9b9b9b;
+    list-style-type: initial;
 }
 
 .introduce {
-    background: rgb(179, 216, 178);
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.introduce ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.introduce li {
+    padding: 5px 0;
 }
 
 .syllabus {
-    background: rgb(230, 168, 206);
+    padding: 0px 40px 40px 40px;
+    margin: 0 auto;
 }
+
+.syllabus ul {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.syllabus li {
+    padding: 1em 2em;
+    color: #9b9b9b;
+}
+
+.syllabus li.bg-gray {
+    background-color: #ebebeb;
+    color: #323223;
+}
+
 
 .register {
     background: #ebebeb;
@@ -549,29 +640,75 @@ faq css setting
     cursor: pointer;
 }
 
+.mailto {
+    color: #00cc99;
+    text-decoration: none;
+    font-weight: bold;
+}
+.mailto:hover{
+    color: #4f6ef7;
+}
+.QA_box {
+    color: #9b9b9b;
+    line-height: 1.5em;
+}
+
+.QA_box .question {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #323223;
+}
+
+.refund-alert {
+    margin-top: 30px;
+    color: #323223;
+}
+
 .QA_general {
-    background: rgb(201, 171, 171);
+    padding: 40px 20px 0 20px;
+    margin: 0 auto;
 }
 
 .QA_pay {
-    background: rgb(65, 146, 135);
+    padding: 40px 20px 0 20px;
+    margin: 0 auto;
 }
+
+.QA_box ol {
+    list-style: decimal;
+    margin-left: 3em;
+}
+
+/* .QA_box ul{ 
+    list-style-type: disc;
+    margin-left: 3em;
+} */
+
+.QA_box ul li:before {
+    content: "·";
+    font-size: 30px;
+    vertical-align: text-bottom;
+    margin-left: 1em;
+    margin-right: 4px;
+}
+
 
 .QA_refund {
-    background: rgb(223, 156, 184);
+    padding: 40px 20px;
+    margin: 0 auto;
 }
 
-.QA {
+.QA-form {
     background: #ebebeb;
     text-align: center;
 }
 
-.QA-form {
+.QA-form-container {
     display: inline-block;
     padding: 60px 0 40px 0;
 }
 
-.QA-form>p {
+.QA-form-container>p {
     margin: 0 30px;
     display: inline-block;
     font-size: 30px;
@@ -580,7 +717,7 @@ faq css setting
     text-align: left;
 }
 
-.QA-form>form {
+.QA-form-container>form {
     display: inline-block;
     width: 300px;
     margin: 0 30px;
@@ -588,8 +725,8 @@ faq css setting
     vertical-align: top;
 }
 
-.QA-form input[type="text"],
-.QA-form input[type="email"],
+.QA-form-container input[type="text"],
+.QA-form-container input[type="email"],
 textarea {
     padding: 0.5em 0.6em;
     display: inline-block;
